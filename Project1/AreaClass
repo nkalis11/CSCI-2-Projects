@@ -1,0 +1,24 @@
+import java.util.Scanner; //Imports scanner to accept user input
+import java.lang.Math;  //Imports for usage of Math.PI
+
+public class AreaClass {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in); //Scanner to take user input
+        System.out.println("Enter Radius of Circle: ");
+        int a=scan.nextInt(); //Takes user input to be used as an argument for constructors
+        System.out.println("Enter Width of Rectangle: ");
+        int b= scan.nextInt(); //Takes user input to be used as an argument for constructors
+        System.out.println("Enter Height of Rectangle: ");
+        int c= scan.nextInt(); //Takes user input to be used as an argument for constructors
+        System.out.println("Enter Radius of Cylinder: ");
+        int d= scan.nextInt(); //Takes user input to be used as an argument for constructors
+        System.out.println("Enter Height of Cylinder: ");
+        int e=scan.nextInt(); //Takes user input to be used as an argument for constructors
+        Area circle = new Area(); //Objects for each shape
+        Area rectangle = new Area();
+        Area cylinder = new Area();
+        circle.Area(a); //Setting arguments to be used in constructors
+        rectangle.Area(b,c);
+        cylinder.Area(Math.PI,d,e);
+    }
+}
