@@ -1,0 +1,12 @@
+public class Area {
+    //Calculates the area of each shaped based on the user input and outputs based on each equation
+   static void Area(int a) {
+        System.out.println("The Area of the Circle is:" + Math.PI*a*a);
+    }
+    static void Area(int b, int c) {
+        System.out.println("The Area of the Rectangle is:" + b*c);
+    }
+    static void Area(double pi, int d, int e) {
+        System.out.println("The Area of the Cylinder is:" + Math.PI*d*d*e);
+    }
+}
